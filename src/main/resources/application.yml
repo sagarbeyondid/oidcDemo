@@ -1,0 +1,14 @@
+server.port: 8080
+
+okta:
+  oauth2:
+    clientId: 0oa6szk75iDHOq8PO5d7
+    clientSecret: CDUGo85RkgHBjF81X3aPH3OPNN3EzWvpxzijOvse
+    orgUrl: https://dev-38073170.okta.com
+    redirectUri: http://localhost:${server.port}/authorize/callback
+    issuer: https://dev-38073170.okta.com/oauth2/default
+    token: 00WZYyJSJJgDjLgZFI0BvZ0ZpE-nuuZ8zW71W-t8SL
+    logOutRedirectUri: http://localhost:${server.port}
+    scopes: openid%20email%20profile
+    audience: api://default
+    groupsClaim: groups
